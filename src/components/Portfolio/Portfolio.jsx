@@ -3,7 +3,7 @@ import portfolio from "../../assets/portfolio.png";
 
 export function Portfolio() {
     return(
-        <section className="px-10 md:px-20 lg:px-40 mt-10 ">
+        <section id="portfolio" className="py-10 md:py-16 lg:py-20 px-10 md:px-20 lg:px-40 mt-10 mb-20 ">
           <h3 className="text-3xl py-1 dark:text-white">Portfolio</h3>
 
           <div className="flex mt-5">
@@ -22,12 +22,13 @@ export function Portfolio() {
                  to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70"></div>
                 <div className="absolute inset-0 flex translate-y-[60%] flex-col items-center justify-center 
                 px-9 text-center transition-all duration-500 group-hover:translate-y-0">
-                  <h1 className="font-dmserif text-3xl font-bold text-white">
+                  <h1 className="text-3xl font-bold text-white">
                     YvY
                   </h1>
                   <p className="mb-3 text-lg italic text-white opacity-0 transition-opacity duration-300 
                   group-hover:opacity-100">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis dolore adipisci placeat.
+                    YvY is a platform for farmers where you can know data such as carbon footprint calculation, 
+                    irrigation needs, among many other things.
                   </p>
                   <a
                     href="https://yvyapp.plan21.org/" 
@@ -52,12 +53,12 @@ export function Portfolio() {
                  to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70"></div>
                 <div className="absolute inset-0 flex translate-y-[60%] flex-col items-center justify-center 
                 px-9 text-center transition-all duration-500 group-hover:translate-y-0">
-                  <h1 className="font-dmserif text-3xl font-bold text-white">
+                  <h1 className="text-3xl font-bold text-white">
                     My Portfolio
                   </h1>
                   <p className="mb-3 text-lg italic text-white opacity-0 transition-opacity duration-300 
                   group-hover:opacity-100">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis dolore adipisci placeat.
+                    I built my own portfolio with React and Tailwindcss
                   </p>
                   <a 
                     href="#"

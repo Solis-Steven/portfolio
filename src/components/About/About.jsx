@@ -3,10 +3,10 @@ import { VerticalMenu } from "./VerticalMenu";
 
 export function About() {
     return(
-        <section className="dark:bg-gray-800 p-10 md:p-20 lg:p-40">
+        <section id="about" className="dark:bg-gray-800 p-10 md:p-20 lg:p-40">
           <div className="dark:text-white md:grid md:grid-cols-2">
             <div>
-              <h3 className="text-3xl py-1 ">About me</h3>
+              <h3 className="text-3xl py-1">About me</h3>
               <div className="bg-teal-500 h-1 w-12"></div>
               <VerticalMenu />
               

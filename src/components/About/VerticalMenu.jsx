@@ -12,7 +12,7 @@ export function VerticalMenu() {
     }
 
     return(
-        <section className="grid grid-cols-2 w-2/3 mt-4">
+        <section className="xl:grid xl:grid-cols-2 w-2/3 mt-4">
             <aside>
                 <div 
                     id="agenda">
@@ -49,7 +49,7 @@ export function VerticalMenu() {
                 </div>
             </aside>
 
-            <div>
+            <div className="mt-8 xl:mt-0">
                 {
                     education
                     ? (
@@ -63,10 +63,10 @@ export function VerticalMenu() {
                     : (
                         <div id="experience">
                         <BsFillBriefcaseFill className="inline w-8 h-8 pb-2"/> {""}
-                        <h2 className="inline text-xl font-bold">Experiencie</h2>
+                        <h2 className="inline text-xl font-bold">Experience</h2>
                         <p className="mt-2"> 2022 - Presente</p>
                         <p className="">I volunteer as a frontend developer in "YvY", an application of the Plan 21 
-                        foundation in partnership with IBM. </p>
+                        foundation in partnership with IBM. As a volunteer I work five hours a week</p>
                         </div>
                     )
                 }

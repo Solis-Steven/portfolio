@@ -33,7 +33,8 @@ export default function Portfolio() {
                   </p>
                   <a 
                     href="https://yvyapp.plan21.org/" 
-                    className="rounded-full bg-cyan-500 py-2 px-3.5 font-com text-sm capitalize text-white hover:bg-cyan-600 hover:transition-all hover:duration-300 hover:ease-linear"
+                    className="rounded-full bg-cyan-400 py-2 px-3 text-sm capitalize text-gray-900 
+                    hover:bg-cyan-500 hover:transition-all hover:duration-300 hover:ease-linear"
                     aria-label="More information about my frontend development project experience"
                   >
                     Learn more about this project

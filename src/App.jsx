@@ -1,10 +1,12 @@
 import { useState, Suspense, lazy } from 'react';
+import { ToastContainer } from 'react-toastify';
 import { 
   Header,
   About,
   NavUI,
   Contact
 } from './components/';
+import "react-toastify/dist/ReactToastify.css"
 
 const Portfolio = lazy(() => import("./components/Portfolio/Portfolio"));
 
@@ -26,6 +28,8 @@ function App() {
           <Portfolio />
 
           <Contact />
+
+          <ToastContainer />
         </main>
       </Suspense>
     </div>

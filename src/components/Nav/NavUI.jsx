@@ -2,6 +2,7 @@ import { useState, useEffect   } from "react";
 import { NavElement } from "./NavElement";
 import { HamburguerMenu } from "./HamburguerMenu";
 import { DarkMode } from "./DarkMode";
+import "../../../public/animate.min.css";
 
 export function NavUI({ darkMode, setDarkMode }) {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -21,12 +22,13 @@ export function NavUI({ darkMode, setDarkMode }) {
 
   return (
     <nav className={`py-5 mb-12 px-10 md:px-20 lg:px-40 
-    flex justify-between sticky top-0 z-40 ${scrollY 
-    ? "transition duration-3000 ease-linear bg-black bg-opacity-50"
-    : "transition-all duration-3000 ease-linear"}`}>
+    flex justify-between sticky top-0 z-20 ${scrollY 
+    ? "transition-all duration-300 ease-linear bg-black bg-opacity-50"
+    : "transition-all duration-300 ease-linear"}`}>
 
       <h1 className={`text-xl font-bold dark:text-white duration-300 ease-linear
-      ${scrollY > 10 && !darkMode ? "text-white" : ""}`}>
+      ${scrollY > 10 && !darkMode ? "text-white" : ""}
+      ${menuOpen ? "opacity-0 pointer-events-none" : ""}`}>
         Frontend <span className="text-teal-500"> Developer</span>
       </h1>
 
@@ -40,7 +42,7 @@ export function NavUI({ darkMode, setDarkMode }) {
         <ul
           className={`${
             menuOpen 
-            ? "flex flex-col h-screen justify-center fixed inset-0 items-center gap-8" 
+            ? "flex flex-col justify-center fixed inset-0 items-center gap-8 animate__animated animate__fadeInDown" 
             : "hidden"
           } md:flex md:flex-row md:items-center w-full md:w-auto justify-center z-20`}
         >

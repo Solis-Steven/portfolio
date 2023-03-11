@@ -52,7 +52,7 @@ export function Contact() {
 
                     <input 
                         type="submit"
-                        className="bg-cyan-500 border text-white px-4 py-2 rounded-md uppercase
+                        className="bg-cyan-500 border text-gray-900 px-4 py-2 rounded-md uppercase
                         transition-colors duration-300 ease-linear
                         cursor-pointer w-28 font-bold text-lg hover:bg-cyan-600"
                         value="Send" />

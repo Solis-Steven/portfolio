@@ -2,7 +2,7 @@ import { FaGraduationCap } from "react-icons/fa"
 import { BsFillBriefcaseFill } from "react-icons/bs"
 import { useState } from "react";
 
-export function VerticalMenu() {
+export default function VerticalMenu() {
     const [education, setEducation] = useState(true);
     const [active, setActive] = useState(true);
 

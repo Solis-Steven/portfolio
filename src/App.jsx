@@ -1,30 +1,33 @@
-import { useState } from 'react';
+import { useState, Suspense, lazy } from 'react';
 import { 
   Header,
   About,
-  Portfolio,
   NavUI,
   Contact
 } from './components/';
+
+const Portfolio = lazy(() => import("./components/Portfolio/Portfolio"));
 
 function App() {
   const [darkMode, setDarkMode] = useState(true);
 
   return (
     <div className={`App ${darkMode ? "dark" : ""}`}>
-      <main className='bg-gray-100  dark:bg-gray-900'>
-        <NavUI
-          darkMode={ darkMode }
-          setDarkMode={setDarkMode}/>
-        
-        <Header />
+      <Suspense fallback={<h1>Cargando</h1>}>
+        <main className='bg-gray-100  dark:bg-gray-900'>
+          <NavUI
+            darkMode={ darkMode }
+            setDarkMode={setDarkMode}/>
+          
+          <Header />
 
-        <About />
+          <About />
 
-        <Portfolio />
+          <Portfolio />
 
-        <Contact />
-      </main>
+          <Contact />
+        </main>
+      </Suspense>
     </div>
   )
 }

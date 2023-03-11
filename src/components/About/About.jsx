@@ -1,13 +1,16 @@
-import { Services } from "./Services";
-import { VerticalMenu } from "./VerticalMenu";
+import { lazy } from 'react';
+
+const VerticalMenu = lazy(() => import("./VerticalMenu"));
+const Services = lazy(() => import("./Services"));
 
 export function About() {
     return(
         <section id="about" className="dark:bg-gray-800 p-10 md:p-20 lg:p-40">
           <div className="dark:text-white md:grid md:grid-cols-2">
             <div>
-              <h3 className="text-3xl py-1">About me</h3>
+              <h2 className="text-3xl py-1">About me</h2>
               <div className="bg-teal-500 h-1 w-12"></div>
+              
               <VerticalMenu />
               
             </div>

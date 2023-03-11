@@ -1,6 +1,7 @@
 import { useState, useEffect   } from "react";
-import { BsFillMoonFill, BsFillSunFill } from "react-icons/bs";
-import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
+import { NavElement } from "./NavElement";
+import { HamburguerMenu } from "./HamburguerMenu";
+import { DarkMode } from "./DarkMode";
 
 export function NavUI({ darkMode, setDarkMode }) {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -9,14 +10,6 @@ export function NavUI({ darkMode, setDarkMode }) {
   const handleScroll = () => {
     setScrollY(window.scrollY);
   }
-
-  const handleNavigationClick = (event) => {
-    event.preventDefault();
-    const targetId = event.target.getAttribute("href");
-    const targetElement = document.querySelector(targetId);
-    targetElement.scrollIntoView({ behavior: "smooth" });
-    setMenuOpen(false);
-  };
 
   useEffect(() => {
     window.addEventListener('scroll', handleScroll);
@@ -31,6 +24,7 @@ export function NavUI({ darkMode, setDarkMode }) {
     flex justify-between sticky top-0 z-40 ${scrollY 
     ? "transition duration-3000 ease-linear bg-black bg-opacity-50"
     : "transition-all duration-3000 ease-linear"}`}>
+
       <h1 className={`text-xl font-bold dark:text-white duration-300 ease-linear
       ${scrollY > 10 && !darkMode ? "text-white" : ""}`}>
         Frontend <span className="text-teal-500"> Developer</span>
@@ -38,69 +32,37 @@ export function NavUI({ darkMode, setDarkMode }) {
 
       <div className="flex items-center md:justify-center">
 
-      `<div className="hidden md:block">
-          {!darkMode ? (
-            <BsFillMoonFill
-              onClick={() => setDarkMode(!darkMode)}
-              className={`cursor-pointer text-2xl ml-4 duration-300 ease-linear 
-              ${scrollY > 10 ? "text-white" : ""}`}
-            />
-          ) : (
-            <BsFillSunFill
-              onClick={() => setDarkMode(!darkMode)}
-              className="cursor-pointer text-2xl ml-4 text-yellow-500"
-            />
-          )}
-        </div>
-
-        {/* capa para oscurecer el fondo */}
-        {menuOpen && (
-          <div
-            className="fixed inset-0 bg-gray-800 bg-opacity-50 z-10"
-            onClick={() => setMenuOpen(false)}
-          />
-        )}
+        <DarkMode 
+          darkMode={darkMode}
+          setDarkMode={setDarkMode}
+          scrollY={scrollY}/>
 
         <ul
           className={`${
             menuOpen 
-            ? "flex flex-col h-screen justify-center z-20 fixed inset-0 items-center gap-8" 
+            ? "flex flex-col h-screen justify-center fixed inset-0 items-center gap-8" 
             : "hidden"
           } md:flex md:flex-row md:items-center w-full md:w-auto justify-center z-20`}
         >
 
-          <li>
-            <a
-              href="#about"
-              onClick={handleNavigationClick}
-              className={`ml-4 text-white hover:text-cyan-500 dark:hover:text-cyan-500
-              duration-300 ease-linear ${scrollY < 10 && !darkMode ? "text-black" : ""}`}
-            >
-              About me
-            </a>
-          </li>
-
-          <li>
-            <a
-              href="#portfolio"
-              onClick={handleNavigationClick}
-              className={`ml-4 text-white hover:text-cyan-500 dark:hover:text-cyan-500
-              duration-300 ease-linear ${scrollY < 10 && !darkMode ? "text-black" : ""}`}
-            >
-              Portfolio
-            </a>
-          </li>
-
-          <li>
-            <a
-              href="#contact"
-              onClick={handleNavigationClick}
-              className={`ml-4 text-white hover:text-cyan-500 dark:hover:text-cyan-500
-              duration-300 ease-linear ${scrollY < 10 && !darkMode ? "text-black" : ""}`}
-            >
-              Contact
-            </a>
-          </li>
+          <NavElement 
+            text={"About me"} 
+            id={"#about"}
+            scrollY={scrollY}
+            darkMode={darkMode} 
+            setMenuOpen={setMenuOpen}/>
+          <NavElement 
+            text={"Portfolio"} 
+            id={"#portfolio"}
+            scrollY={scrollY}
+            darkMode={darkMode} 
+            setMenuOpen={setMenuOpen}/>
+          <NavElement 
+            text={"Contact"} 
+            id={"#contact"}
+            scrollY={scrollY}
+            darkMode={darkMode} 
+            setMenuOpen={setMenuOpen}/>
 
           <li>
             <a
@@ -111,21 +73,13 @@ export function NavUI({ darkMode, setDarkMode }) {
               Resume
             </a>
           </li>
+
         </ul>
 
-        <div className="md:hidden">
-          <button
-            onClick={() => setMenuOpen(!menuOpen)}
-            className="text-gray-500 dark:text-white hover:text-cyan-500 focus:outline-none"
-          >
-            {menuOpen ? (
-              <AiOutlineClose className="w-6 h-6" />
-            ) : (
-              <AiOutlineMenu className="w-6 h-6" />
-            )}
-          </button>
-        </div>
-
+        <HamburguerMenu 
+          menuOpen={ menuOpen } 
+          setMenuOpen={setMenuOpen} />
+        
       </div>
     </nav>
   );

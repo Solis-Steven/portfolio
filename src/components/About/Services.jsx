@@ -1,6 +1,7 @@
 import { MdOutlineDesignServices, MdCode, MdSecurity } from "react-icons/md"
 
-export function Services() {
+
+export default function Services() {
     return(
         <>
             <h3 className="text-3xl py-1 dark:text-white mt-20 text-center">My Services</h3>

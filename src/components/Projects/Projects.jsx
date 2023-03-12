@@ -1,10 +1,6 @@
 import yvy from "../../assets/yvy.webp";
 import portfolio from "../../assets/portfolio.webp";
 
-const projectInfo = [
-
-];
-
 export default function Projects() {
     return(
         <section id="portfolio" className="py-10 md:py-16 lg:py-20 px-10 md:px-20 lg:px-40 mt-10 mb-20 ">

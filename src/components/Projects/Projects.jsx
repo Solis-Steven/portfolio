@@ -1,10 +1,14 @@
 import yvy from "../../assets/yvy.webp";
 import portfolio from "../../assets/portfolio.webp";
 
-export default function Portfolio() {
+const projectInfo = [
+
+];
+
+export default function Projects() {
     return(
         <section id="portfolio" className="py-10 md:py-16 lg:py-20 px-10 md:px-20 lg:px-40 mt-10 mb-20 ">
-          <h2 className="text-3xl py-1 dark:text-white">Portfolio</h2>
+          <h2 className="text-3xl py-1 dark:text-white">My Projects</h2>
 
           <div className="flex mt-5">
             <div className="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3">

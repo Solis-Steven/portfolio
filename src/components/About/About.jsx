@@ -7,7 +7,8 @@ export function About() {
         <section id="about" className="dark:bg-gray-800 p-10 md:p-20 lg:p-40">
 
           <div className="flex flex-col items-center md:items-start">
-            <div className="dark:text-white md:grid md:grid-cols-2 md:items-start">
+            <div className="dark:text-white md:grid md:grid-cols-2
+            self-center">
               <div>
                 <h2 className="text-3xl py-1">About me</h2>
                 <div className="bg-teal-500 h-1 w-12"></div>

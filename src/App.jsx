@@ -8,7 +8,7 @@ import {
 } from './components/';
 import "react-toastify/dist/ReactToastify.css"
 
-const Portfolio = lazy(() => import("./components/Portfolio/Portfolio"));
+const Projects = lazy(() => import("./components/Projects/Projects"));
 
 function App() {
   const [darkMode, setDarkMode] = useState(true);
@@ -25,7 +25,7 @@ function App() {
 
           <About />
 
-          <Portfolio />
+          <Projects />
 
           <Contact />
 

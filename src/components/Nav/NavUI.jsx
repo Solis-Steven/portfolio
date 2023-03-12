@@ -68,7 +68,7 @@ export function NavUI({ darkMode, setDarkMode }) {
 
           <li>
             <a
-              href="#"
+              href="/public/StevenResume.pdf"
               className="border-cyan-500 border text-cyan-500 px-4 py-2 rounded-md ml-8
             hover:text-white hover:bg-cyan-500 transition-colors duration-300 ease-linear"
             >

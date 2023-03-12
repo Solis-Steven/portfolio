@@ -1,5 +1,5 @@
 export * from "./About"
 export * from "./Contact"
 export * from "./Header"
-export * from "./Portfolio"
+export * from "./Projects"
 export * from "./Nav"

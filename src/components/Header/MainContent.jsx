@@ -23,7 +23,11 @@ export function MainContent() {
 
             <div className="text-5xl flex justify-center cursor-pointer text-gray-600
             dark:text-white animate__animated animate__fadeInLeft">
-                <AiFillLinkedin />
+                <a 
+                    target="_blank"
+                    href="https://www.linkedin.com/in/steven-sol%C3%ADs-9983701ba">
+                    <AiFillLinkedin/>
+                </a >
             </div>
 
         </>

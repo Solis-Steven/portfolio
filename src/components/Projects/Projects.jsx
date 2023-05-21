@@ -1,9 +1,8 @@
+import { DiAngularSimple, DiReact } from "react-icons/di"
+import { SiTailwindcss } from "react-icons/si"
 import yvy from "../../assets/yvy.webp";
 import portfolio from "../../assets/portfolio.webp";
-
-const projectInfo = [
-
-];
+import { Project } from "./Project";
 
 export default function Projects() {
     return(
@@ -13,7 +12,27 @@ export default function Projects() {
           <div className="flex mt-5">
             <div className="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3">
 
-              <div className="group relative cursor-pointer items-center justify-center 
+              <Project
+                image={yvy}
+                alt="Image of YvY application"
+                name="YvY"
+                href="https://yvyapp.plan21.org/"
+                description="YvY is a platform for farmers where you can know data such as carbon footprint calculation, 
+                irrigation needs, among many other things.">
+                <DiAngularSimple className="text-5xl" />
+              </Project>
+
+              <Project
+                image={portfolio}
+                alt="Image of my portfolio"
+                name="My Portfolio"
+                href="#"
+                description="I built my own portfolio with React and Tailwindcss">
+                <DiReact className="text-5xl" />
+                <SiTailwindcss className="text-5xl" />
+              </Project>
+
+              {/* <div className="group relative cursor-pointer items-center justify-center 
               overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30">
                 <div className="h-96 w-full">
                   <img 
@@ -68,7 +87,7 @@ export default function Projects() {
                     I built my own portfolio with React and Tailwindcss
                   </p>
                 </div>
-              </div>
+              </div> */}
 
             </div>
           </div>

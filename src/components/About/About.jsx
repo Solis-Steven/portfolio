@@ -1,5 +1,7 @@
 import { lazy } from 'react';
 import { FaGraduationCap } from "react-icons/fa"
+import { MdOutlineWork } from "react-icons/md"
+
 const Services = lazy(() => import("./Services"));
 
 export function About() {
@@ -38,9 +40,15 @@ export function About() {
                 <p>Modern JavaScript Definitive Guide Build +20 Projects</p>
 
                 <p className="mt-4">2023</p>
-                <p>React - The Comlete Guide: Hooks, Context, Redux, MERN, +15 Apps</p>
+                <p className="mb-6">React - The Comlete Guide: Hooks, Context, Redux, MERN, +15 Apps</p>
 
+                <MdOutlineWork className="inline w-8 h-8 pb-2 "/> {""}
+                <h2 className="inline text-xl font-bold">Work Experience</h2>
+
+                <p className="mt-4 font">June 2022 - April 2023</p>
+                <p>Frontend Developer as a Volunteer</p>
               </div>
+
             </div>
           </div>
 

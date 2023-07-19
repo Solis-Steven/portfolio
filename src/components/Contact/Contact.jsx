@@ -51,7 +51,8 @@ export function Contact() {
                         name="user_name" 
                         value={name}
                         onChange={e => setName(e.target.value)}
-                        className="border-2 w-full p-3 mt-2 placeholder-gray400 rounded-md mb-5"/>
+                        placeholder="Your name"
+                        className="border-2 w-full p-3 mt-2 placeholder-gray-400 rounded-md mb-5"/>
                    
                     <label
                         htmlFor="email" 
@@ -62,7 +63,8 @@ export function Contact() {
                         name="user_email"
                         value={email}
                         onChange={e => setEmail(e.target.value)}
-                        className="border-2 w-full p-3 mt-2 placeholder-gray400 rounded-md mb-5" />
+                        placeholder="Your email address"
+                        className="border-2 w-full p-3 mt-2 placeholder-gray-400 rounded-md mb-5" />
                    
                     <label 
                         htmlFor="message"
@@ -72,7 +74,8 @@ export function Contact() {
                         name="message" 
                         value={message}
                         onChange={e => setMessage(e.target.value)}
-                        className="border-2 w-full p-3 mt-2 placeholder-gray400
+                        placeholder="What do you want to say?"
+                        className="border-2 w-full p-3 mt-2 placeholder-gray-400
                     rounded-md mb-5" />
                    
                     <input 

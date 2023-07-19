@@ -1,0 +1,16 @@
+[
+    {
+        "image": "/src/assets/yvy.webp",
+        "alt": "Image of YvY application",
+        "name": "YvY",
+        "href": "https://yvyapp.plan21.org/",
+        "description": "YvY is a platform for farmers where you can know data such as carbon footprint calculation, irrigation needs, among many other things."
+    },
+    {
+        "image": "/src/assets/portfolio.webp",
+        "alt": "Image of my portfolio",
+        "name": "My Portfolio",
+        "href": "#",
+        "description": "This portfolio was built only using React and Tailwind CSS, and here you can see my experience and get in contact with me."
+    }
+]

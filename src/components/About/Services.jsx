@@ -7,7 +7,8 @@ export default function Services() {
             <h3 className="text-3xl py-1 dark:text-white mt-20 text-center">My Services</h3>
             <div className="lg:flex gap-10 lg:justify-center">
                 <div className="flex flex-col items-center shadow-lg p-10 rounded-xl
-                my-10 dark:bg-white hover:transform hover:scale-105">
+                my-10 bg-white hover:transform hover:scale-105 transition-all
+                duration-300">
                     <MdOutlineDesignServices className="w-36 h-36"/>
 
                     <h3 className="text-2xl font-bold pt-8 pb-2">Beautiful Designs</h3>
@@ -18,7 +19,8 @@ export default function Services() {
                 </div>
 
                 <div className="flex flex-col items-center shadow-lg p-10 rounded-xl
-                my-10 dark:bg-white hover:transform hover:scale-105">
+                my-10 bg-white hover:transform hover:scale-105 transition-all
+                duration-300">
                     <MdCode className="w-36 h-36"/>
                     <h3 className="text-2xl font-bold pt-8 pb-2">Good Solutions</h3>
                     <p className="py-2 text-center max-w-sm">
@@ -28,7 +30,8 @@ export default function Services() {
                 </div>
 
                 <div className="flex flex-col items-center shadow-lg p-10 rounded-xl
-                my-10 dark:bg-white hover:transform hover:scale-105">
+                my-10 bg-white hover:transform hover:scale-105 transition-all
+                duration-300">
                     <MdSecurity className="w-36 h-36"/>
                     <h3 className="text-2xl font-bold pt-8 pb-2">Security</h3>
                     <p className="py-2 text-center max-w-sm">

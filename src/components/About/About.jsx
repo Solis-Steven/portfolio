@@ -17,14 +17,16 @@ export function About() {
                 
                 <p className="text-md py-5 leading-8 text-gray-800 dark:text-white
                 max-w-md">
-                My name is Steven Solis, I'm 19 years old and I'm a frontend developer. 
-                I like to be constantly learning and I love working in a team. I study computer 
-                engineering but I also like data science.
+                  Hello, I'm Steven Solís, a passionate full stack developer. I love 
+                  learning and working as part of a team. I'm studying computer engineering. 
+                  I'm thrilled about web development and creating captivating experiences. 
+                  I'm seeking new challenges to grow. I look forward to collaborating with 
+                  you on exciting projects!
                 </p>
                 <p className="text-md py-5 leading-8 text-gray-800 dark:text-white
                 max-w-md">
-                If you have any offers or are interested in working with me, you can contact me below, 
-                I will be excited to take on new challenges.
+                  If you have any offers or are interested in working with me, you can contact me below, 
+                  I will be excited to take on new challenges.
                 </p>
                 
               </div>
@@ -45,8 +47,8 @@ export function About() {
                 <MdOutlineWork className="inline w-8 h-8 pb-2 "/> {""}
                 <h2 className="inline text-xl font-bold">Work Experience</h2>
 
-                <p className="mt-4 font">June 2022 - April 2023</p>
-                <p>Frontend Developer as a Volunteer</p>
+                <p className="mt-4 font">July 2022 - April 2023</p>
+                <p>Frontend developer as volunteer for an argentine foundation</p>
               </div>
 
             </div>

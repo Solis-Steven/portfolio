@@ -1,36 +1,33 @@
 
 export function Project({
-    image, alt, name, href, description, children
+    image, alt, name, href, description
 }) {
     return(
-        <div className="group relative cursor-pointer items-center justify-center bg-white
-        overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30 p-4 rounded-md">
+        <section className="max-w-sm bg-white border border-gray-200 rounded-lg shadow
+        transition-all duration-300 hover:-translate-y-3 hover:cursor-pointer group">
+            <img className="rounded-t-lg" src={image} alt={alt} />
 
-            <div className="h-36 w-full">
-                <img 
-                loading="lazy"
-                className="h-full w-full object-cover transition-transform duration-500 
-                hover:rotate-3" 
-                src={image} 
-                alt={alt} />
-            </div>
-            <div className="flex flex-col items-center h-full">
-                <h3 className="text-xl font-bold">{name}</h3>
-                <p className="my-2">{description}</p>
-                <div className="flex">
-                    {children}
-                </div>
+            <article className="p-5 flex flex-col items-baseline">
+                <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 
+                group-hover:border-b-2 group-hover:border-b-teal-500 transition-all duration-200" >
+                    {name}
+                </h5>
+
+                <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                    {description}
+                </p>
                 <a 
-                    href={href}
-                    className="rounded-full bg-cyan-400 py-2 px-3 text-sm capitalize text-gray-900 
-                    hover:bg-cyan-500 hover:transition-all hover:duration-300 hover:ease-linear
-                    mt-2"
-                    aria-label="More information about my frontend development project experience"
-                    target="_blank">
-                    Learn more about this project
+                    href={`${href}`} 
+                    className="inline-flex items-center px-3 py-2 text-sm font-medium text-center 
+                    text-white bg-teal-700 rounded-lg hover:bg-teal-800 focus:ring-4 
+                    focus:outline-none focus:ring-teal-300 dark:bg-teal-600 dark:hover:bg-teal-700 
+                    dark:focus:ring-teal-800 transition-colors duration-300">
+                    Read more
+                    <svg className="w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                    </svg>
                 </a>
-            </div>
-    
-        </div>
+            </article>
+        </section>
     );
 }

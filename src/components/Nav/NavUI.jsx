@@ -29,7 +29,7 @@ export function NavUI({ darkMode, setDarkMode }) {
       <h1 className={`text-xl font-bold dark:text-white duration-300 ease-linear
       ${scrollY > 10 && !darkMode ? "text-white" : ""}
       ${menuOpen ? "opacity-0 pointer-events-none" : ""}`}>
-        Frontend <span className="text-teal-500"> Developer</span>
+        Full Stack <span className="text-teal-500"> Developer</span>
       </h1>
 
       <div className="flex items-center md:justify-center">

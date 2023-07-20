@@ -1,13 +1,13 @@
 [
     {
-        "image": "/src/assets/yvy.webp",
+        "image": "/assets/yvy.webp",
         "alt": "Image of YvY application",
         "name": "YvY",
         "href": "https://yvyapp.plan21.org/",
         "description": "YvY is a platform for farmers where you can know data such as carbon footprint calculation, irrigation needs, among many other things."
     },
     {
-        "image": "/src/assets/portfolio.webp",
+        "image": "/assets/portfolio.webp",
         "alt": "Image of my portfolio",
         "name": "My Portfolio",
         "href": "#",

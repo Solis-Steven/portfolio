@@ -5,8 +5,8 @@ export default function Services() {
     return(
         <>
             <h3 className="text-3xl py-1 dark:text-white mt-20 text-center">My Services</h3>
-            <div className="lg:flex gap-10 lg:justify-center">
-                <div className="flex flex-col items-center shadow-lg p-10 rounded-xl
+            <section className="lg:flex gap-10 lg:justify-center">
+                <article className="flex flex-col items-center shadow-lg p-10 rounded-xl
                 my-10 bg-white hover:transform hover:scale-105 transition-all
                 duration-300">
                     <MdOutlineDesignServices className="w-36 h-36"/>
@@ -16,9 +16,9 @@ export default function Services() {
                     Let us give shape to your creative ideas and offer your users the 
                     possibility to enjoy a great experience.
                     </p>
-                </div>
+                </article>
 
-                <div className="flex flex-col items-center shadow-lg p-10 rounded-xl
+                <article className="flex flex-col items-center shadow-lg p-10 rounded-xl
                 my-10 bg-white hover:transform hover:scale-105 transition-all
                 duration-300">
                     <MdCode className="w-36 h-36"/>
@@ -27,9 +27,9 @@ export default function Services() {
                     I offer customized and efficient web solutions to improve the 
                     online presence of your business, optimizing the user experience and simplifying your work.
                     </p>
-                </div>
+                </article>
 
-                <div className="flex flex-col items-center shadow-lg p-10 rounded-xl
+                <article className="flex flex-col items-center shadow-lg p-10 rounded-xl
                 my-10 bg-white hover:transform hover:scale-105 transition-all
                 duration-300">
                     <MdSecurity className="w-36 h-36"/>
@@ -38,8 +38,8 @@ export default function Services() {
                     Your systems will have security in place to prevent third 
                     parties from harming your users.
                     </p>
-                </div>
-            </div>
+                </article>
+            </section>
         </>
     );
 }

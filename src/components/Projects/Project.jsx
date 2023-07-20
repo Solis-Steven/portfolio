@@ -9,11 +9,11 @@ export function Project({
 
             <article className="p-5 flex flex-col items-baseline">
                 <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 
-                group-hover:border-b-2 group-hover:border-b-teal-500 transition-all duration-200" >
+                group-hover:border-b-2 group-hover:border-b-teal-500" >
                     {name}
                 </h5>
 
-                <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                <p className="mb-3 font-normal text-gray-700 dark:text-gray-400 text-justify">
                     {description}
                 </p>
                 <a 

@@ -39,7 +39,7 @@ export function Contact() {
             <h3 className="text-3xl py-1 dark:text-white">Contact me</h3>
 
             <div className="flex flex-col shadow-lg p-10 rounded-xl
-                my-10 dark:bg-white w-11/12 sm:w-2/3">
+                my-10 bg-white w-11/12 sm:w-2/3">
 
                 <form ref={form} onSubmit={sendEmail}>
                     <label 

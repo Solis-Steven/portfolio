@@ -16,7 +16,7 @@ export function About() {
                 <div className="bg-teal-500 h-1 w-12"></div>
                 
                 <p className="text-md py-5 leading-8 text-gray-800 dark:text-white
-                max-w-md">
+                max-w-md text-justify">
                   Hello, I'm Steven Solís, a passionate full stack developer. I love 
                   learning and working as part of a team. I'm studying computer engineering. 
                   I'm thrilled about web development and creating captivating experiences. 
@@ -24,7 +24,7 @@ export function About() {
                   you on exciting projects!
                 </p>
                 <p className="text-md py-5 leading-8 text-gray-800 dark:text-white
-                max-w-md">
+                max-w-md text-justify">
                   If you have any offers or are interested in working with me, you can contact me below, 
                   I will be excited to take on new challenges.
                 </p>
@@ -35,7 +35,7 @@ export function About() {
                 <FaGraduationCap className="inline w-8 h-8 pb-2"/> {""}
                 <h2 className="inline text-xl font-bold">Education</h2>
 
-                <p className="mt-4 font">2021 - Presente</p>
+                <p className="mt-4">2021 - Presente</p>
                 <p>I am studying computer engineering</p>
 
                 <p className="mt-4">2022</p>
@@ -47,7 +47,7 @@ export function About() {
                 <MdOutlineWork className="inline w-8 h-8 pb-2 "/> {""}
                 <h2 className="inline text-xl font-bold">Work Experience</h2>
 
-                <p className="mt-4 font">July 2022 - April 2023</p>
+                <p className="mt-4">July 2022 - April 2023</p>
                 <p>Frontend developer as volunteer for an argentine foundation</p>
               </div>
 

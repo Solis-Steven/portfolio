@@ -1,5 +1,5 @@
 import { Project } from "./Project";
-import projects from "./projects.json"
+import projects from "./projects.json";
 
 export default function Projects() {
     return(

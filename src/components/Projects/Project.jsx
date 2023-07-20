@@ -5,7 +5,7 @@ export function Project({
     return(
         <section className="max-w-sm bg-white border border-gray-200 rounded-lg shadow
         transition-all duration-300 hover:-translate-y-3 hover:cursor-pointer group">
-            <img className="rounded-t-lg" src={image} alt={alt} />
+            <img className="rounded-t-lg" src={`${image}`} alt={alt} />
 
             <article className="p-5 flex flex-col items-baseline">
                 <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 

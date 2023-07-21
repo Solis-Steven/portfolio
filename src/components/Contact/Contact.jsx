@@ -87,6 +87,8 @@ export function Contact() {
                 </form>
                 
             </div>
+                <p className="text-white">&copy; <span className="text-teal-500"> Steven Solis</span>. All rights reserved</p>
+                <p className="text-white">Designed by <span className="text-teal-500">Steven Solis</span></p>
         </section>
     );
 }

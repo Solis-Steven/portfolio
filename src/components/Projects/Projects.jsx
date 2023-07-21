@@ -1,5 +1,7 @@
 import { Project } from "./Project";
-import projects from "./projects.json";
+import yvy from "/assets/yvy.webp";
+import portfolio from "/assets/portfolio.webp";
+// import projects from "./projects.json";
 
 export default function Projects() {
     return(
@@ -9,7 +11,7 @@ export default function Projects() {
           <div className="flex mt-5 justify-center">
             <div className="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3">
 
-              {
+              {/* {
                 projects.map((project, index) => (
                   <Project 
                     key={index}
@@ -20,7 +22,23 @@ export default function Projects() {
                     description={project.description}
                   />
                 ))
-              }
+              } */}
+
+              <Project 
+                image={yvy}
+                alt="Image of YvY application"
+                name="YvY"
+                href="https://yvyapp.plan21.org/"
+                description="YvY is a platform for farmers where you can know data such as carbon footprint calculation, irrigation needs, among many other things."
+              />
+
+              <Project 
+                image={portfolio}
+                alt="Image of my portfolio"
+                name="My Portfolio"
+                href="#"
+                description="This portfolio was built only using React and Tailwind CSS, and here you can see my experience and get in contact with me."
+              />
 
             </div>
           </div>

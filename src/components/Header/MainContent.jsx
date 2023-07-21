@@ -1,5 +1,5 @@
 import { AiFillLinkedin } from "react-icons/ai";   
-import me  from '/assets/me.webp';
+import me  from '/me.webp';
 import "../../../public/animate.min.css"
 
 export function MainContent() {
